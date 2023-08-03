@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "env": {
+      "DATABASE_URL": "mongodb+srv://stuffhack92:stuffhack92@cluster0.kmlw4kp.mongodb.net/temp"
+    },
+    "build": {
+      "env": {
+        "DATABASE_URL": "mongodb+srv://stuffhack92:stuffhack92@cluster0.kmlw4kp.mongodb.net/temp"
+      },
+      "postBuild": "prisma generate"
+    }
+  }
+  
