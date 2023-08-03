@@ -6,7 +6,7 @@ import EmptyState from "../components/EmptyState";
 import TripsClient from "./TripsClient";
 
 
-export const dynamic = "force-dynamic"
+
 const TripsPage = async () => {
     const currentUser = await getCurrentUser();
     if(!currentUser){
