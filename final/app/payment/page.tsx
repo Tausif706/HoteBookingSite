@@ -6,7 +6,7 @@ import React from 'react'
 import { ClientOnly } from "../components/ClientOnly";
 import EmptyState from "../components/EmptyState";
 import PaymentGate from "./PaymentGate";
-
+export const dynamic = "force-dynamic"
 const PaymentPage = async () => {
   const currentUser = await getCurrentUser();
   if(!currentUser){
